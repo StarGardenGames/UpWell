@@ -41,6 +41,9 @@ arm_angle = 0;
 arm_sprite = sPlayerThrowArm;
 arm_frame = 0;
 arm_speed = 0;
+
+hpmax = 3; 
+hp = 2; 
 </string>
           </argument>
         </arguments>
@@ -72,6 +75,8 @@ if(mouse_check_button_pressed(mb_left)) playerShoots();
 playerUpdateAnimation();
 
 playerCheckDeath();
+
+show_debug_message(hp); 
 </string>
           </argument>
         </arguments>
