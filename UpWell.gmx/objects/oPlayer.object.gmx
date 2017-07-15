@@ -44,6 +44,8 @@ arm_speed = 0;
 
 hpmax = 3; 
 hp = 2; 
+repeat(3)
+    instance_create(random(room_width),random(room_height),oEnemy)
 </string>
           </argument>
         </arguments>
@@ -68,7 +70,7 @@ hp = 2;
             <kind>1</kind>
             <string>playerMove();
 
-arm_angle = point_direction(x,y,mouse_x,mouse_y); 
+arm_angle = point_direction(x,y,mouse_x,mouse_y);
 
 if(mouse_check_button_pressed(mb_left)) playerShoots();
 
@@ -99,8 +101,13 @@ show_debug_message(hp);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-draw_sprite_ext(arm_sprite,arm_frame,x,y,1,image_yscale,arm_angle,image_blend,image_alpha);
+            <string>var draw_angle=arm_angle
+if(90 &lt; arm_angle &amp;&amp; arm_angle &lt; 270){
+    draw_angle -= 2*(arm_angle-90)
+}
+
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+draw_sprite_ext(arm_sprite,arm_frame,x,y,image_xscale,image_yscale,draw_angle,image_blend,image_alpha);
 </string>
           </argument>
         </arguments>

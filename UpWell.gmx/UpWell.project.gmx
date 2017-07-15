@@ -17,6 +17,7 @@
     <sprite>sprites\sGun</sprite>
     <sprite>sprites\sHeartblock</sprite>
     <sprite>sprites\sDamageblock</sprite>
+    <sprite>sprites\sEnemy</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,9 +45,11 @@
     <object>objects\oPlayer</object>
     <object>objects\oHeartblock</object>
     <object>objects\oDamageblock</object>
+    <object>objects\oEnemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
