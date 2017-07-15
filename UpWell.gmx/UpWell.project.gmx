@@ -11,6 +11,7 @@
       <sprite>sprites\sPlayerJump</sprite>
       <sprite>sprites\sPlayerIdle</sprite>
       <sprite>sprites\sPlayerFalling</sprite>
+      <sprite>sprites\sPlayerThrowArm</sprite>
     </sprites>
     <sprite>sprites\sSolid</sprite>
     <sprite>sprites\sGun</sprite>

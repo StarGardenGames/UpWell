@@ -37,7 +37,10 @@ jump_power = -grav * jump_max_hor_dist / (2 * max_hsp);
 vsp = 0;
 hsp = 0;
 
-gun_angle = 0;
+arm_angle = 0;
+arm_sprite = sPlayerThrowArm;
+arm_frame = 0;
+arm_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -62,7 +65,7 @@ gun_angle = 0;
             <kind>1</kind>
             <string>playerMove();
 
-gun_angle = point_direction(x,y,mouse_x,mouse_y); 
+arm_angle = point_direction(x,y,mouse_x,mouse_y); 
 
 if(mouse_check_button_pressed(mb_left)) playerShoots();
 
@@ -92,7 +95,7 @@ playerCheckDeath();
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-draw_sprite_ext(sGun,0,x,y,1,image_yscale,gun_angle,image_blend,image_alpha);
+draw_sprite_ext(arm_sprite,arm_frame,x,y,1,image_yscale,arm_angle,image_blend,image_alpha);
 </string>
           </argument>
         </arguments>
