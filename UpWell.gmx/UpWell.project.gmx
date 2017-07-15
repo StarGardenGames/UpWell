@@ -26,6 +26,9 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
+      <scripts name="Init">
+        <script>scripts\playerInitMovement.gml</script>
+      </scripts>
       <scripts name="Movement">
         <script>scripts\playerMove.gml</script>
         <script>scripts\playerMoveHorizontal.gml</script>
@@ -33,14 +36,13 @@
         <script>scripts\playerCheckCollisions.gml</script>
         <script>scripts\playerApplyMovement.gml</script>
       </scripts>
-      <scripts name="Shooting">
-        <script>scripts\playerShoots.gml</script>
-      </scripts>
       <scripts name="Animation">
         <script>scripts\playerUpdateAnimation.gml</script>
         <script>scripts\playerUpdateSprite.gml</script>
       </scripts>
       <script>scripts\playerCheckDeath.gml</script>
+      <script>scripts\playerShoots.gml</script>
+      <script>scripts\playerUpdateView.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\enemySpawnOutsideOfTerrain.gml</script>

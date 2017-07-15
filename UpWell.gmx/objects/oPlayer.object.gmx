@@ -25,18 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// 3 game feel variables
-var jump_max_hor_dist = 192
-var jump_max_height = 160
-max_hsp = 8;
-
-//copied from binary dash, proved using kinematics
-grav = jump_max_height * 2 * power(2*max_hsp, 2)/power(jump_max_hor_dist,2);
-float_grav = grav * .65;
-jump_power = -grav * jump_max_hor_dist / (2 * max_hsp);
-
-vsp = 0;
-hsp = 0;
+            <string>playerInitMovement();
 
 arm_angle = 0;
 arm_sprite = sPlayerThrowArm;
@@ -46,6 +35,10 @@ arm_speed = 0;
 hpmax = 3; 
 hp = hpmax; 
 
+vsp = 0;
+hsp = 0;
+
+view_yview = y;// set low so it can be reset
 </string>
           </argument>
         </arguments>
@@ -78,7 +71,7 @@ playerUpdateAnimation();
 
 playerCheckDeath();
 
-
+playerUpdateView();
 </string>
           </argument>
         </arguments>
@@ -103,7 +96,6 @@ playerCheckDeath();
             <kind>1</kind>
             <string>var draw_angle=arm_angle
 if(90 &lt; arm_angle &amp;&amp; arm_angle &lt; 270){
-    //draw_angle -= 2*(arm_angle-90)
     draw_angle += 180
 }
 
