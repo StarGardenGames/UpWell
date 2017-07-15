@@ -11,4 +11,9 @@ if(pressing_up && on_ground){
     vsp = jump_power;
 }
 
-vsp += grav;
+if(keyboard_check(ord('W'))){
+    vsp += float_grav;
+}else{
+    vsp += grav;
+}
+

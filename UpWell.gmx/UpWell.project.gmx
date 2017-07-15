@@ -17,8 +17,11 @@
     <sprite>sprites\sGun</sprite>
     <sprite>sprites\sHeartblock</sprite>
     <sprite>sprites\sDamageblock</sprite>
-    <sprite>sprites\sEnemy</sprite>
-    <sprite>sprites\sEnemy2</sprite>
+    <sprites name="Enemies">
+      <sprite>sprites\sRex</sprite>
+      <sprite>sprites\sBat</sprite>
+      <sprite>sprites\sRexBlack</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
