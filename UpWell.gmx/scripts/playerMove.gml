@@ -1,0 +1,7 @@
+playerMoveHorizontal()
+
+playerMoveVertical()
+
+playerCheckCollisions()
+
+playerApplyMovement()
