@@ -10,6 +10,7 @@
       <sprite>sprites\sPlayerRun</sprite>
       <sprite>sprites\sPlayerJump</sprite>
       <sprite>sprites\sPlayerIdle</sprite>
+      <sprite>sprites\sPlayerFalling</sprite>
     </sprites>
     <sprite>sprites\sSolid</sprite>
     <sprite>sprites\sGun</sprite>
