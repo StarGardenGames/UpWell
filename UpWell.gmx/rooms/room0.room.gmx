@@ -58,6 +58,10 @@
     <instance objName="oTerrain" x="656" y="544" name="inst_94DC0358" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="144" y="400" name="inst_CAE2E258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oHeartblock" x="784" y="544" name="inst_BB59379F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oEnemy" x="448" y="128" name="inst_FAEBB334" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDamageblock" x="720" y="544" name="inst_70CD942B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oHeartblock" x="960" y="192" name="inst_B695C0FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDamageblock" x="528" y="144" name="inst_2C386D7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
