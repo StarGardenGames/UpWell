@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>29</bbox_left>
-  <bbox_right>101</bbox_right>
-  <bbox_top>4</bbox_top>
-  <bbox_bottom>125</bbox_bottom>
+  <bbox_left>30</bbox_left>
+  <bbox_right>99</bbox_right>
+  <bbox_top>8</bbox_top>
+  <bbox_bottom>122</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -23,6 +23,6 @@
     <frame index="0">images\sPlayerRun_0.png</frame>
   </frames>
   <SWFfile>images\sPlayerRun.swf</SWFfile>
-  <SWFnumframes>19</SWFnumframes>
+  <SWFnumframes>18</SWFnumframes>
   <SWFprecision>0.5</SWFprecision>
 </sprite>

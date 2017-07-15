@@ -6,10 +6,10 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>1</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>127</bbox_right>
-  <bbox_top>0</bbox_top>
+  <bboxmode>0</bboxmode>
+  <bbox_left>35</bbox_left>
+  <bbox_right>91</bbox_right>
+  <bbox_top>5</bbox_top>
   <bbox_bottom>127</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -23,6 +23,6 @@
     <frame index="0">images\sPlayerIdle_0.png</frame>
   </frames>
   <SWFfile>images\sPlayerIdle.swf</SWFfile>
-  <SWFnumframes>16</SWFnumframes>
+  <SWFnumframes>18</SWFnumframes>
   <SWFprecision>0.5</SWFprecision>
 </sprite>

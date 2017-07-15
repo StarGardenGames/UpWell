@@ -6,11 +6,11 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>1</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>127</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>127</bbox_bottom>
+  <bboxmode>0</bboxmode>
+  <bbox_left>36</bbox_left>
+  <bbox_right>98</bbox_right>
+  <bbox_top>1</bbox_top>
+  <bbox_bottom>123</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -23,6 +23,6 @@
     <frame index="0">images\sPlayerJump_0.png</frame>
   </frames>
   <SWFfile>images\sPlayerJump.swf</SWFfile>
-  <SWFnumframes>7</SWFnumframes>
+  <SWFnumframes>18</SWFnumframes>
   <SWFprecision>0.5</SWFprecision>
 </sprite>
