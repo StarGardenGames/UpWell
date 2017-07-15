@@ -50,6 +50,7 @@
     <object>objects\oEnemySpawner</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room4</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
     <room>rooms\room0</room>
