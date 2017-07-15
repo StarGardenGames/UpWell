@@ -26,6 +26,16 @@
           <argument>
             <kind>1</kind>
             <string>sprite_index = choose(sEnemy, sEnemy2)
+
+sp = 8;
+
+tries = 0
+while(tries &lt; 4 &amp;&amp; !place_free(x,y)){
+    x = random(room_width)
+    tries++;
+}
+
+if(tries == 4) instance_destroy()
 </string>
           </argument>
         </arguments>
@@ -49,12 +59,51 @@
           <argument>
             <kind>1</kind>
             <string>dir = point_direction(x,y,oPlayer.x,oPlayer.y)
-hsp = lengthdir_x(4,dir)
-x += hsp
-vsp = lengthdir_y(4,dir)
-y += vsp
+hsp = lengthdir_x(sp,dir)
+vsp = lengthdir_y(sp,dir)
+
+ter = instance_place(x+hsp,y+vsp,oTerrain)
+
+if(ter != noone){
+    if(ter.moving){
+        instance_destroy()
+    }else{
+        var dx = x - ter.x
+        var dy = y - ter.y
+        
+        if(abs(dx) &gt; abs(dy)){
+            hsp = 0;
+            if(random(30) &lt; 1){
+                vsp = sp * sign(vsp)
+            }else{
+                vsp = sp * sign(prev_vsp)
+            }
+        }else{
+            vsp = 0;
+            if(random(30) &lt; 1){
+                hsp = sp * sign(hsp)
+            }else{
+                hsp = sp * sign(prev_hsp)
+            }
+        }
+    }
+}
+
+if(!place_free(x+hsp,y)) hsp = 0
+if(!place_free(x,y+vsp)) vsp = 0
 
 image_xscale = -1 + (hsp &gt; 0)*2
+
+if(place_meeting(x,y,oPlayer)){
+    instance_destroy();
+    oPlayer.hp--;
+}
+
+prev_hsp = hsp
+prev_vsp = vsp
+
+x += hsp
+y += vsp
 
 </string>
           </argument>

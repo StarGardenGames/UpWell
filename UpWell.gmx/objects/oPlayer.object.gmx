@@ -77,8 +77,6 @@ playerUpdateAnimation();
 
 playerCheckDeath();
 
-show_debug_message(hp); 
-
 
 </string>
           </argument>

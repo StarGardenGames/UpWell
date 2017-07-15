@@ -45,8 +45,8 @@
     <object>objects\oTerrain</object>
     <object>objects\oPlayer</object>
     <object>objects\oHeartblock</object>
-    <object>objects\oDamageblock</object>
     <object>objects\oEnemy</object>
+    <object>objects\oDamageblock</object>
     <object>objects\oEnemySpawner</object>
   </objects>
   <rooms name="rooms">
