@@ -13,15 +13,14 @@
       <sprite>sprites\sPlayerFalling</sprite>
       <sprite>sprites\sPlayerThrowArm</sprite>
     </sprites>
-    <sprite>sprites\sSolid</sprite>
-    <sprite>sprites\sGun</sprite>
-    <sprite>sprites\sHeartblock</sprite>
-    <sprite>sprites\sDamageblock</sprite>
     <sprites name="Enemies">
       <sprite>sprites\sRex</sprite>
       <sprite>sprites\sBat</sprite>
       <sprite>sprites\sRexBlack</sprite>
     </sprites>
+    <sprite>sprites\sSolid</sprite>
+    <sprite>sprites\sHeartblock</sprite>
+    <sprite>sprites\sDamageblock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -43,14 +42,25 @@
       </scripts>
       <script>scripts\playerCheckDeath.gml</script>
     </scripts>
+    <scripts name="Enemy">
+      <script>scripts\enemySpawnOutsideOfTerrain.gml</script>
+      <script>scripts\enemyAvoidTerrain.gml</script>
+      <script>scripts\enemyCheckAtTarget.gml</script>
+      <script>scripts\enemyCheckTerrainInteract.gml</script>
+      <script>scripts\enemyMoveTowardPlayer.gml</script>
+      <script>scripts\enemyApplyMovement.gml</script>
+      <script>scripts\enemyUpdateFacing.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\oTerrain</object>
     <object>objects\oPlayer</object>
-    <object>objects\oHeartblock</object>
     <object>objects\oEnemy</object>
-    <object>objects\oDamageblock</object>
     <object>objects\oEnemySpawner</object>
+    <objects name="Terrain">
+      <object>objects\oTerrain</object>
+      <object>objects\oHeartblock</object>
+      <object>objects\oDamageblock</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room4</room>

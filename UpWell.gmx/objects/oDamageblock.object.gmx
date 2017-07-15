@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dmg = 1; //amount of damage applied to player
+            <string>event_inherited();
+
+dmg = 1; //amount of damage applied to player
 time2dmg = 16; //time it takes for the player to get damaged
 counter = 0; //time counter
 </string>
@@ -50,7 +52,9 @@ counter = 0; //time counter
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y-1,oPlayer))
+            <string>event_inherited();
+
+if(place_meeting(x,y-1,oPlayer))
 {
     if(counter == time2dmg)
     {
