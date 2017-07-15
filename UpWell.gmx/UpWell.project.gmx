@@ -6,7 +6,11 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sPlayer</sprite>
+    <sprites name="Player">
+      <sprite>sprites\sPlayerRun</sprite>
+      <sprite>sprites\sPlayerJump</sprite>
+      <sprite>sprites\sPlayerIdle</sprite>
+    </sprites>
     <sprite>sprites\sSolid</sprite>
     <sprite>sprites\sGun</sprite>
   </sprites>
@@ -24,6 +28,11 @@
       <scripts name="Shooting">
         <script>scripts\playerShoots.gml</script>
       </scripts>
+      <scripts name="Animation">
+        <script>scripts\playerUpdateAnimation.gml</script>
+        <script>scripts\playerUpdateSprite.gml</script>
+      </scripts>
+      <script>scripts\playerCheckDeath.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
