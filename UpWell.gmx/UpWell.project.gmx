@@ -18,6 +18,7 @@
     <sprite>sprites\sHeartblock</sprite>
     <sprite>sprites\sDamageblock</sprite>
     <sprite>sprites\sEnemy</sprite>
+    <sprite>sprites\sEnemy2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -46,11 +47,12 @@
     <object>objects\oHeartblock</object>
     <object>objects\oDamageblock</object>
     <object>objects\oEnemy</object>
+    <object>objects\oEnemySpawner</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\room1</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
