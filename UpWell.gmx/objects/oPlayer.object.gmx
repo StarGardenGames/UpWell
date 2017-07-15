@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>// 3 game feel variables
 var jump_max_hor_dist = 256
-var jump_max_height = 64
+var jump_max_height = 96
 max_hsp = 8;
 
 //copied from binary dash, proved using kinematics
@@ -36,6 +36,8 @@ jump_power = -grav * jump_max_hor_dist / (2 * max_hsp);
 
 vsp = 0;
 hsp = 0;
+
+gun_angle = 0;
 </string>
           </argument>
         </arguments>
@@ -58,7 +60,35 @@ hsp = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>playerMove()
+            <string>playerMove();
+
+gun_angle = point_direction(x,y,mouse_x,mouse_y); 
+
+if(mouse_check_button_pressed(mb_left)) playerShoots();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_sprite(sPlayer,0,x,y);
+draw_sprite_ext(sGun,0,x,y,image_xscale,image_yscale,gun_angle,image_blend,image_alpha);
 </string>
           </argument>
         </arguments>

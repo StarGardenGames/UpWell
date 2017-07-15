@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
     <sprite>sprites\sSolid</sprite>
+    <sprite>sprites\sGun</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -20,8 +21,10 @@
         <script>scripts\playerCheckCollisions.gml</script>
         <script>scripts\playerApplyMovement.gml</script>
       </scripts>
+      <scripts name="Shooting">
+        <script>scripts\playerShoots.gml</script>
+      </scripts>
     </scripts>
-    <script>scripts\script7.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oTerrain</object>
