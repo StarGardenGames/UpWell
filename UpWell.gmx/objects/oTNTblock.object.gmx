@@ -66,8 +66,8 @@ var rx = x - view_xview;
 var ry = y - view_yview;
 if(part_emitter_exists(sys,emit))
     part_emitter_region(sys,emit,rx,rx,ry,ry,ps_shape_rectangle,ps_distr_linear);
-x += 1000;
-y += 1000;
+x += 10000;
+y += 10000;
 
 while(true)
 {
