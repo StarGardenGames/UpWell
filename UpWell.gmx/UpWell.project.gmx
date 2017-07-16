@@ -31,6 +31,7 @@
     </sprites>
     <sprite>sprites\sBackground</sprite>
     <sprite>sprites\sHealthGUI</sprite>
+    <sprite>sprites\sGrayParticle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -102,6 +103,7 @@
       <object>objects\oTerrainBreak</object>
     </objects>
     <object>objects\oHealthGUI</object>
+    <object>objects\oDeathFog</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_rand</room>

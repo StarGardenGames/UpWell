@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>randomize();
 
+instance_create(0,0,oDeathFog)
+
 max_spawn_rate = 50;
 alarm[0] = max_spawn_rate;
 
