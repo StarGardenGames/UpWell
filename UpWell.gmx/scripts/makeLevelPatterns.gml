@@ -59,6 +59,12 @@ patterns[ i, 1] = "________";
 patterns[ i, 2] = "________";
 patterns[ i, 3] = "___DDDDD";i++;
 
+patterns[ i, 0] = "PXTTXP";i++;
+
+patterns[ i, 0] = "PXT";
+patterns[ i, 1] = "TTX";
+patterns[ i, 1] = "XTP";i++;
+
 
 
 

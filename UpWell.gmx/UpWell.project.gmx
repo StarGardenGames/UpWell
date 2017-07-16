@@ -34,6 +34,7 @@
     <sprite>sprites\sHealthGUI</sprite>
     <sprite>sprites\sGrayParticle</sprite>
     <sprite>sprites\sRedParticle</sprite>
+    <sprite>sprites\sTitle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -87,6 +88,7 @@
     <script>scripts\print.gml</script>
     <script>scripts\particleExplosion.gml</script>
     <script>scripts\particleEnemyDeath.gml</script>
+    <script>scripts\playerScaleCollisionBox.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -97,6 +99,7 @@
     <object>objects\oControl</object>
     <object>objects\oHealthGUI</object>
     <object>objects\oDeathFog</object>
+    <object>objects\oTitle</object>
     <objects name="Terrain">
       <object>objects\oTerrain</object>
       <object>objects\oHeartblock</object>
@@ -107,6 +110,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_title</room>
     <room>rooms\rm_rand</room>
     <room>rooms\room0</room>
     <room>rooms\room4</room>

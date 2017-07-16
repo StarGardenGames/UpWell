@@ -32,6 +32,8 @@ arm_sprite = sPlayerArmNormal;
 arm_frame = 0;
 arm_speed = 0;
 
+scale = .8
+
 hpmax = 3;
 hp = hpmax;
 
@@ -50,6 +52,7 @@ dmg_reset_counter_max = 4;
 jumps_left = 2;
 
 dead = false;
+
 
 </string>
           </argument>
@@ -157,10 +160,10 @@ if(90 &lt; arm_angle &amp;&amp; arm_angle &lt; 270){
     draw_angle += 180
 }
 
-drawSpriteExt(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+drawSpriteExt(sprite_index,image_index,x,y,image_xscale*scale,image_yscale*scale,image_angle,image_blend,image_alpha);
 if(!dead)
-    drawSpriteExt(arm_sprite,arm_frame,x-18*image_xscale,y-17,
-        image_xscale,image_yscale,draw_angle,image_blend,image_alpha);
+    drawSpriteExt(arm_sprite,arm_frame,x-(18*image_xscale)*scale,y-17*scale,
+        image_xscale*scale,image_yscale*scale,draw_angle,image_blend,image_alpha);
 
 </string>
           </argument>

@@ -28,7 +28,9 @@
             <string>sp = 24; 
 dir = 0; 
 moving = false; 
-if(place_meeting(x,y,oTerrain)) instance_destroy();
+
+if(place_meeting(x,y,oTerrain) &amp;&amp; object_index != oTNTblock) 
+    instance_destroy();
 
 gen_y = 0
 hp = 100;
@@ -120,6 +122,9 @@ image_index = 5 * (1-(hp / 100))//6,7,8 are played
           <argument>
             <kind>1</kind>
             <string>drawSelf();
+draw_set_font(font0)
+draw_set_color(c_white)
+draw_text(x-view_xview,y-view_yview,gen_y)
 </string>
           </argument>
         </arguments>

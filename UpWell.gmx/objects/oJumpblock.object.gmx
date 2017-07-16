@@ -55,6 +55,7 @@ jump_mod = 1.5; //Amount to modify jump by
 if(place_meeting(x,y-1,oPlayer)) 
 {
     oPlayer.vsp = oPlayer.jump_power*jump_mod; 
+    oPlayer.jumps_left = 1;
     instance_destroy();
 }
 </string>
