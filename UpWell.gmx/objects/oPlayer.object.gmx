@@ -56,6 +56,7 @@ jumps_left = 2;
 
 dead = false;
 
+score = 0; 
 
 </string>
           </argument>
