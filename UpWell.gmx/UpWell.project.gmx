@@ -26,9 +26,11 @@
     <sprites name="Terrain">
       <sprite>sprites\sDamageblock</sprite>
       <sprite>sprites\sHeartblock</sprite>
-      <sprite>sprites\sSolid</sprite>
+      <sprite>sprites\sBlockBreak</sprite>
       <sprite>sprites\sJumpblock</sprite>
       <sprite>sprites\sTNTblock</sprite>
+      <sprite>sprites\sBlock</sprite>
+      <sprite>sprites\sBreakOverlay</sprite>
     </sprites>
     <sprite>sprites\sBackground</sprite>
     <sprite>sprites\sHealthGUI</sprite>
@@ -106,7 +108,6 @@
       <object>objects\oDamageblock</object>
       <object>objects\oJumpblock</object>
       <object>objects\oTNTblock</object>
-      <object>objects\oDeathFog</object>
       <object>objects\oTerrainBreak</object>
     </objects>
   </objects>
