@@ -68,7 +68,7 @@ off_screen_acc = 128;
     ps_shape_rectangle,ps_distr_linear)
 
 y -= 2
-if(abs(y-view_yview) &gt; off_screen_acc) y = view_yview;  
+//if(abs(y-view_yview) &gt; off_screen_acc) y = view_yview+100;  
 </string>
           </argument>
         </arguments>
