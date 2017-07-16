@@ -117,7 +117,7 @@ if(keyboard_check_pressed(ord('R'))){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sBackground,0,0,0)
+            <string>draw_sprite(sBackground,0,view_xview,view_yview)
 </string>
           </argument>
         </arguments>

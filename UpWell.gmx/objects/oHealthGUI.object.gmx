@@ -82,7 +82,7 @@ if(frame &gt; target)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,frame,x,y,
+            <string>draw_sprite_ext(sprite_index,frame,view_xview+x,view_yview+y,
     image_xscale,image_yscale,0,$FFFFFF,1)
 </string>
           </argument>

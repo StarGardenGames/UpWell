@@ -19,5 +19,5 @@ if(instance_exists(o))
     o.moving = true; 
     //gun_angle doesn't work, because of mirroring
     o.dir = degtorad(point_direction(x,y,
-        mouse_x+view_xview,mouse_y+view_yview)); 
+        mouse_x,mouse_y)); 
 }

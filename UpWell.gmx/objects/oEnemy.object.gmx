@@ -86,7 +86,7 @@ enemyApplyMovement();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>drawSelf();
+            <string>draw_self()
 </string>
           </argument>
         </arguments>

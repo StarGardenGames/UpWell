@@ -64,9 +64,8 @@ off_screen_acc = room_height*1.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_emitter_region(sys,emit,0,room_width,y-view_yview-80,y-view_yview+20-80,
+            <string>part_emitter_region(sys,emit,0,room_width,y-80,y+20-80,
     ps_shape_rectangle,ps_distr_linear)
-//print(view_yview," ",y);
 y -= 2
 if(abs(y-view_yview) &gt; off_screen_acc) y = view_yview+room_height;  
 </string>
