@@ -106,7 +106,6 @@
       <object>objects\oDamageblock</object>
       <object>objects\oJumpblock</object>
       <object>objects\oTNTblock</object>
-      <object>objects\oDeathFog</object>
       <object>objects\oTerrainBreak</object>
     </objects>
   </objects>
