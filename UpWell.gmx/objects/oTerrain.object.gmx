@@ -41,6 +41,8 @@ if(object_index == oTerrain){
     frame = random(image_number)
     image_speed = 0
 }
+
+was_moving = false;
 </string>
           </argument>
         </arguments>
@@ -93,7 +95,8 @@ else
             <string>if(place_meeting(x+sp*cos(dir),y-sp*sin(dir),oTerrain) &amp;&amp; moving)
 {
     move_contact_solid(radtodeg(dir),sp);
-    moving = false;  
+    moving = false;
+    was_moving = true;
 }
 
 if(moving)
