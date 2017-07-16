@@ -53,6 +53,7 @@
   <instances>
     <instance objName="oPlayer" x="608" y="640" name="inst_2025E8FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oControl" x="0" y="0" name="inst_9C7AF22E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oHealthGUI" x="0" y="32" name="inst_5418475A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

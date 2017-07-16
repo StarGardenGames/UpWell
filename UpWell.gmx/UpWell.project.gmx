@@ -30,6 +30,7 @@
       <sprite>sprites\sTNTblock</sprite>
     </sprites>
     <sprite>sprites\sBackground</sprite>
+    <sprite>sprites\sHealthGUI</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -99,6 +100,7 @@
       <object>objects\oJumpblock</object>
       <object>objects\oTNTblock</object>
     </objects>
+    <object>objects\oHealthGUI</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_rand</room>
