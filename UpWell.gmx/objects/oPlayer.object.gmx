@@ -40,6 +40,9 @@ hp = hpmax;
 vsp = 0;
 hsp = 0;
 
+ex_hsp = 0;
+ex_vsp = 0;
+
 view_yview = y;// set low so it can be reset
 
 mouse_counter = 0; 
