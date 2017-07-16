@@ -33,6 +33,7 @@
     <sprite>sprites\sBackground</sprite>
     <sprite>sprites\sHealthGUI</sprite>
     <sprite>sprites\sGrayParticle</sprite>
+    <sprite>sprites\sRedParticle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -85,6 +86,7 @@
     </scripts>
     <script>scripts\print.gml</script>
     <script>scripts\particleExplosion.gml</script>
+    <script>scripts\particleEnemyDeath.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>

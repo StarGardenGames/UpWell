@@ -1,3 +1,4 @@
+
 sys = part_system_create();
 part_type = part_type_create();
 part_type_shape(part_type,pt_shape_explosion);
