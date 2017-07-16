@@ -33,12 +33,13 @@ arm_frame = 0;
 arm_speed = 0;
 
 hpmax = 3; 
-hp = hpmax; 
+hp = hpmax;
 
 vsp = 0;
 hsp = 0;
 
 view_yview = y;// set low so it can be reset
+
 </string>
           </argument>
         </arguments>
@@ -63,7 +64,8 @@ view_yview = y;// set low so it can be reset
             <kind>1</kind>
             <string>playerMove();
 
-arm_angle = point_direction(x,y,mouse_x,mouse_y);
+arm_angle = point_direction(x,y,
+    mouse_x+view_xview,mouse_y+view_yview);
 
 if(mouse_check_button_pressed(mb_left)) playerShoots();
 
@@ -99,8 +101,8 @@ if(90 &lt; arm_angle &amp;&amp; arm_angle &lt; 270){
     draw_angle += 180
 }
 
-draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-draw_sprite_ext(arm_sprite,arm_frame,x-18*image_xscale,y-17,
+drawSpriteExt(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+drawSpriteExt(arm_sprite,arm_frame,x-18*image_xscale,y-17,
 image_xscale,image_yscale,draw_angle,image_blend,image_alpha);
 
 </string>

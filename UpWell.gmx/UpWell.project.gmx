@@ -53,11 +53,27 @@
       <script>scripts\enemyApplyMovement.gml</script>
       <script>scripts\enemyUpdateFacing.gml</script>
     </scripts>
+    <scripts name="Control">
+      <script>scripts\updateGeneration.gml</script>
+      <script>scripts\makeLevelPatterns.gml</script>
+      <script>scripts\spawnPattern.gml</script>
+      <script>scripts\getBlockObject.gml</script>
+      <script>scripts\generateWall.gml</script>
+    </scripts>
+    <scripts name="Overriden Draw">
+      <script>scripts\drawSpriteExt.gml</script>
+      <script>scripts\drawSelf.gml</script>
+      <script>scripts\drawSprite.gml</script>
+    </scripts>
+    <script>scripts\print.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\oPlayer</object>
     <object>objects\oEnemy</object>
-    <object>objects\oEnemySpawner</object>
+    <object>objects\oControl</object>
     <objects name="Terrain">
       <object>objects\oTerrain</object>
       <object>objects\oHeartblock</object>
@@ -65,6 +81,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_rand</room>
     <room>rooms\room4</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
