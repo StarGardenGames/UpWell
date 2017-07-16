@@ -79,8 +79,8 @@ while(true)
     }
     else break; 
 }
-
-part_emitter_burst(sys,emit,part_type,10);
+if(part_emitter_exists(sys,emit))
+    part_emitter_burst(sys,emit,part_type,10);
 </string>
           </argument>
         </arguments>

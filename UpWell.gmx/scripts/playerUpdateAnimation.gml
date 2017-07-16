@@ -23,10 +23,10 @@ if(mouse_check_button_released(mb_left)){
 arm_frame += arm_speed;
 
 if(arm_frame >= sprite_get_number(arm_sprite)){
-    if(arm_sprite != sPlayerArmCharge){
-        arm_frame = 0;
-    }else{
+    if(arm_sprite == sPlayerArmCharge){
         arm_frame = sprite_get_number(arm_sprite)-1;
+    }else{
+        arm_frame = 0;
     }
     arm_speed = 0;
 }

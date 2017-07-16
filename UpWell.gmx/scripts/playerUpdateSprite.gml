@@ -1,4 +1,6 @@
-if(vsp != 0){
+if(dead){
+    sprite_index = sPlayerDeath;
+}else if(vsp != 0){
     if(vsp < 0){
         sprite_index = sPlayerJump;
     }else{

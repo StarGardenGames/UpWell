@@ -28,7 +28,7 @@
             <string>image_speed = 0;
 frame = 0;
 
-chapters[0] = 29;
+chapters[0] = 27;
 chapters[1] = 19;
 chapters[2] = 10;
 chapters[3] = 0;
@@ -60,6 +60,8 @@ if(frame &lt; target)
     frame+=1;
 if(frame &gt; target)
     frame-=1;
+    
+print(frame);
 </string>
           </argument>
         </arguments>
@@ -82,8 +84,7 @@ if(frame &gt; target)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index != 29)
-    draw_sprite_ext(sprite_index,frame,x,y,
+            <string>draw_sprite_ext(sprite_index,frame,x,y,
     image_xscale,image_yscale,0,$FFFFFF,1)
 </string>
           </argument>

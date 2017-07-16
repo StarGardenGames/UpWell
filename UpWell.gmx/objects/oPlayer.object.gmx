@@ -49,6 +49,31 @@ dmg_reset_counter_max = 4;
 
 jumps_left = 2;
 
+dead = false;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>game_restart();
 </string>
           </argument>
         </arguments>
@@ -71,28 +96,40 @@ jumps_left = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>playerMove();
-
-arm_angle = point_direction(x,y,
-    mouse_x+view_xview,mouse_y+view_yview);
-
-playerMouseOperation();
-
-playerUpdateAnimation();
-
-playerCheckDeath();
-
-playerUpdateView();
-
-if(image_blend == c_red) 
-{
-if(dmg_reset_counter &gt;= dmg_reset_counter_max) 
-{
-    image_blend = c_white; 
-    dmg_reset_counter = 0; 
-}    
-dmg_reset_counter++; 
+            <string>if(!dead){
+    playerMove();
+    
+    arm_angle = point_direction(x,y,
+        mouse_x+view_xview,mouse_y+view_yview);
+    
+    playerMouseOperation();
+    
+    playerCheckDeath();
+    
+    playerUpdateView();
+    
+    playerUpdateAnimation();
+    
+    if(image_blend == c_red) 
+    {
+    if(dmg_reset_counter &gt;= dmg_reset_counter_max) 
+    {
+        image_blend = c_white; 
+        dmg_reset_counter = 0; 
+    }    
+    dmg_reset_counter++; 
+    }
+}else{
+    hp = 0;
+    image_blend = c_white;
+    if(alarm[0] == -1 &amp;&amp; image_index + image_speed &gt;= image_number){
+        image_speed = 0;
+        image_index = image_number-1;
+        visible = false;
+        alarm[0] = 30;
+    }
 }
+
 </string>
           </argument>
         </arguments>
@@ -121,11 +158,10 @@ if(90 &lt; arm_angle &amp;&amp; arm_angle &lt; 270){
 }
 
 drawSpriteExt(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
-drawSpriteExt(arm_sprite,arm_frame,x-18*image_xscale,y-17,
-image_xscale,image_yscale,draw_angle,image_blend,image_alpha);
+if(!dead)
+    drawSpriteExt(arm_sprite,arm_frame,x-18*image_xscale,y-17,
+        image_xscale,image_yscale,draw_angle,image_blend,image_alpha);
 
-var xscale = -1+(hsp&gt;0)*2
-var side_obj = collision_rectangle(x+26*xscale,y-44,x+32*xscale,y-49,oTerrain,false,true)
 </string>
           </argument>
         </arguments>

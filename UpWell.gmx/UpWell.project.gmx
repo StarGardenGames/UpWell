@@ -12,6 +12,7 @@
       <sprite>sprites\sPlayerIdle</sprite>
       <sprite>sprites\sPlayerFalling</sprite>
       <sprite>sprites\sPlayerClimbing</sprite>
+      <sprite>sprites\sPlayerDeath</sprite>
       <sprite>sprites\sPlayerArmNormal</sprite>
       <sprite>sprites\sPlayerArmCharge</sprite>
       <sprite>sprites\sPlayerArmBomb</sprite>
