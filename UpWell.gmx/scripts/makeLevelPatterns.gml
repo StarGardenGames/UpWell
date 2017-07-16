@@ -29,3 +29,38 @@ patterns[ i, 0] = "PTP";
 patterns[ i, 1] = "TTT";
 patterns[ i, 2] = "THT";i++;
 
+patterns[ i, 0] = "TTT";
+patterns[ i, 1] = "THT";
+patterns[ i, 2] = "TTT";i++;
+
+
+patterns[ i, 0] = "_____";
+patterns[ i, 1] = "_____";
+patterns[ i, 2] = "TJJJT";i++;
+
+patterns[ i, 0] = "DTTD";i++;
+
+patterns[ i, 0] = "TT____DD";i++;
+
+patterns[ i, 0] = "________";
+patterns[ i, 1] = "________";
+patterns[ i, 2] = "JD____DJ";i++;
+
+
+patterns[ i, 0] = "________";
+patterns[ i, 1] = "________";
+patterns[ i, 2] = "JJ____JJ";
+patterns[ i, 3] = "HT____TH";i++;
+
+patterns[ i, 0] = "HH______";i++;
+
+patterns[ i, 0] = "DDDDD___";
+patterns[ i, 1] = "________";
+patterns[ i, 2] = "________";
+patterns[ i, 3] = "___DDDDD";i++;
+
+
+
+
+
+
