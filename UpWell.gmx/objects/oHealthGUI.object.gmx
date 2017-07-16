@@ -83,8 +83,8 @@ if(frame &gt; target)
           <argument>
             <kind>1</kind>
             <string>if(image_index != 29)
-    draw_sprite_ext(sprite_index,frame,30,30,
-    5,5,0,$FFFFFF,1)
+    draw_sprite_ext(sprite_index,frame,x,y,
+    image_xscale,image_yscale,0,$FFFFFF,1)
 </string>
           </argument>
         </arguments>
