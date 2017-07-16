@@ -40,15 +40,14 @@ hsp = 0;
 
 view_yview = y;// set low so it can be reset
 
-edge = noone;
-edge_locked = false;
-
 mouse_counter = 0; 
 mouse_counter_max = 8;
 std_shoot = true; 
 
 dmg_reset_counter = 0; 
 dmg_reset_counter_max = 4; 
+
+jumps_left = 2;
 
 </string>
           </argument>

@@ -1,8 +1,4 @@
-if(edge_locked){
-    playerCheckClimb()
-}else{
-    playerMoveHorizontal()
-}
+playerMoveHorizontal()
 
 playerMoveVertical()
 

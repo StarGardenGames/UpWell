@@ -1,13 +1,8 @@
-if(!edge_locked)
-    image_xscale = -1 + (mouse_x > x)*2;
+image_xscale = -1 + (mouse_x > x)*2;
 
 playerUpdateSprite()
 
-if(sprite_index == sPlayerClimbing){
-    image_speed = 0;
-}else{
-    image_speed = 1;
-}
+image_speed = 1;
 
 if(mouse_check_button_pressed(mb_left)){
     arm_frame = 0;

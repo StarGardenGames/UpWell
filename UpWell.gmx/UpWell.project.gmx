@@ -46,8 +46,6 @@
         <script>scripts\playerMoveVertical.gml</script>
         <script>scripts\playerCheckCollisions.gml</script>
         <script>scripts\playerApplyMovement.gml</script>
-        <script>scripts\playerCheckEdgeGrab.gml</script>
-        <script>scripts\playerCheckClimb.gml</script>
       </scripts>
       <scripts name="Animation">
         <script>scripts\playerUpdateAnimation.gml</script>
@@ -94,6 +92,8 @@
     <object>objects\oPlayer</object>
     <object>objects\oEnemy</object>
     <object>objects\oControl</object>
+    <object>objects\oHealthGUI</object>
+    <object>objects\oDeathFog</object>
     <objects name="Terrain">
       <object>objects\oTerrain</object>
       <object>objects\oHeartblock</object>
@@ -102,8 +102,6 @@
       <object>objects\oTNTblock</object>
       <object>objects\oTerrainBreak</object>
     </objects>
-    <object>objects\oHealthGUI</object>
-    <object>objects\oDeathFog</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_rand</room>
