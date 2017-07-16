@@ -136,6 +136,9 @@ dead = false;
     }
 }
 
+var scr = abs(y - ystart)-80
+if(scr &gt; score) score = scr
+
 </string>
           </argument>
         </arguments>

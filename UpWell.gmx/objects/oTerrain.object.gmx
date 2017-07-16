@@ -40,6 +40,7 @@ on_jump_destroy_call = noone
 if(object_index == oTerrain){
     frame = random(image_number)
     image_speed = 0
+    image_angle = 90 * irandom(3)
 }
 
 was_moving = false;
@@ -136,7 +137,7 @@ if(object_index != oTerrain)
             <string>if(object_index != oTerrain)
     draw_self()
 else{
-    draw_sprite(sprite_index,frame,x,y)
+    draw_sprite_ext(sprite_index,frame,x,y,1,1,image_angle,c_white,1)
     if(image_index != 0) draw_sprite(sBreakOverlay,image_index-1,x,y)
 }
 </string>
