@@ -96,7 +96,7 @@ image_index = (image_number-1) * (1-(hp / 100))//6,7,8 are played
           <argument>
             <kind>1</kind>
             <string>drawSelf();
-drawRectangle(x-32,y-32,x-32+.64*hp,y-32+10,false);
+//drawRectangle(x-32,y-32,x-32+.64*hp,y-32+10,false);
 </string>
           </argument>
         </arguments>

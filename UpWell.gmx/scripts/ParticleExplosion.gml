@@ -1,5 +1,4 @@
 sys = part_system_create();
-
 part_type = part_type_create();
 part_type_shape(part_type,pt_shape_explosion);
 part_type_colour3(part_type,c_red,c_orange,c_gray);

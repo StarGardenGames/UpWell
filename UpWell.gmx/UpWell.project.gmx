@@ -81,10 +81,9 @@
     </scripts>
     <scripts name="Terrain">
       <script>scripts\terrainHeartOnJumpCall.gml</script>
-      <script>scripts\terrainExplosion.gml</script>
     </scripts>
     <script>scripts\print.gml</script>
-    <script>scripts\ParticleExplosion.gml</script>
+    <script>scripts\particleExplosion.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -103,8 +102,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_rand</room>
-    <room>rooms\room4</room>
     <room>rooms\room0</room>
+    <room>rooms\room4</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
   </rooms>

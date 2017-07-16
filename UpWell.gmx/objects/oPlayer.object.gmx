@@ -47,6 +47,9 @@ mouse_counter = 0;
 mouse_counter_max = 8;
 std_shoot = true; 
 
+dmg_reset_counter = 0; 
+dmg_reset_counter_max = 4; 
+
 </string>
           </argument>
         </arguments>
@@ -84,6 +87,16 @@ playerUpdateAnimation();
 playerCheckDeath();
 
 playerUpdateView();
+
+if(image_blend == c_red) 
+{
+if(dmg_reset_counter &gt;= dmg_reset_counter_max) 
+{
+    image_blend = c_white; 
+    dmg_reset_counter = 0; 
+}    
+dmg_reset_counter++; 
+}
 </string>
           </argument>
         </arguments>

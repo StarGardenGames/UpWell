@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-ParticleExplosion();
+particleExplosion();
 
 dist_acc = 96; 
 </string>
@@ -53,7 +53,33 @@ dist_acc = 96;
             <kind>1</kind>
             <string>event_inherited();
 
-terrainExplosion();
+var x_temp = x; 
+var y_temp = y; 
+
+if(!moving)
+{ 
+    part_emitter_region(sys,emit,x,x,y,y,ps_shape_rectangle,ps_distr_linear);
+    x += 1000;
+    y += 1000; 
+    
+    while(true)
+    {
+        oe = instance_nearest(x_temp,y_temp,oEnemy);
+        if(oe != noone &amp;&amp; (abs(oe.x - x_temp) &lt; dist_acc) &amp;&amp; (abs(oe.y - y_temp) &lt; dist_acc)) 
+        {
+            with(oe) instance_destroy();
+        }
+        o = instance_nearest(x_temp,y_temp,oTerrain);
+        if(o != noone &amp;&amp; (abs(o.x - x_temp) &lt; dist_acc) &amp;&amp; (abs(o.y - y_temp) &lt; dist_acc))
+        {
+            with(o) instance_destroy();         
+        }
+        else break; 
+    }
+    
+    part_emitter_burst(sys,emit,part_type,10);
+    instance_destroy(); 
+}
 </string>
           </argument>
         </arguments>
