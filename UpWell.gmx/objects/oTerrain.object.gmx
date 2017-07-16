@@ -131,10 +131,10 @@ if(object_index != oTerrain)
           <argument>
             <kind>1</kind>
             <string>if(object_index != oTerrain)
-    drawSelf();
+    draw_self()
 else{
-    drawSprite(sprite_index,frame,x,y)
-    drawSprite(sBreakOverlay,image_index,x,y)
+    draw_sprite(sprite_index,frame,x,y)
+    if(image_index != 0) draw_sprite(sBreakOverlay,image_index-1,x,y)
 }
 </string>
           </argument>
