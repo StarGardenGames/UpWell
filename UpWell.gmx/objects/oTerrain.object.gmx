@@ -70,6 +70,8 @@ if(moving)
 if(hp &lt; 0 || y-32 &gt; view_yview + room_height){
     instance_destroy();
 }
+
+image_index = (image_number-1) * (1-(hp / 100))//6,7,8 are played
 </string>
           </argument>
         </arguments>

@@ -12,7 +12,9 @@
       <sprite>sprites\sPlayerIdle</sprite>
       <sprite>sprites\sPlayerFalling</sprite>
       <sprite>sprites\sPlayerClimbing</sprite>
-      <sprite>sprites\sPlayerThrowArm</sprite>
+      <sprite>sprites\sPlayerArmNormal</sprite>
+      <sprite>sprites\sPlayerArmCharge</sprite>
+      <sprite>sprites\sPlayerArmBomb</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\sRex</sprite>
@@ -27,6 +29,7 @@
       <sprite>sprites\sJumpblock</sprite>
       <sprite>sprites\sTNTblock</sprite>
     </sprites>
+    <sprite>sprites\sBackground</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -98,9 +101,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\rm_rand</room>
     <room>rooms\room4</room>
+    <room>rooms\room0</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
   </rooms>

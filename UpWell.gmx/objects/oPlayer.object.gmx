@@ -28,7 +28,7 @@
             <string>playerInitMovement();
 
 arm_angle = 0;
-arm_sprite = sPlayerThrowArm;
+arm_sprite = sPlayerArmNormal;
 arm_frame = 0;
 arm_speed = 0;
 
