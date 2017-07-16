@@ -99,6 +99,7 @@
       <object>objects\oDamageblock</object>
       <object>objects\oJumpblock</object>
       <object>objects\oTNTblock</object>
+      <object>objects\oTerrainBreak</object>
     </objects>
     <object>objects\oHealthGUI</object>
   </objects>

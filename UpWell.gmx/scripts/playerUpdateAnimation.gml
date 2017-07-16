@@ -17,6 +17,7 @@ if(mouse_check_button_pressed(mb_left)){
 
 if(mouse_check_button_released(mb_left)){
     arm_speed = .5;
+    arm_frame = 0;
     if(mouse_counter < mouse_counter_max){
         arm_sprite = sPlayerArmNormal;
     }else{
