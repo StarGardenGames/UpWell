@@ -41,7 +41,7 @@ part_emitter_stream(sys,emit,type,5)
 
 y = room_height *2
 
-off_screen_acc = 128; 
+off_screen_acc = room_height; 
 </string>
           </argument>
         </arguments>
@@ -64,11 +64,11 @@ off_screen_acc = 128;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_emitter_region(sys,emit,0,room_width,y-view_yview-100,y-view_yview+20-100,
+            <string>part_emitter_region(sys,emit,0,room_width,y-view_yview-80,y-view_yview+20-80,
     ps_shape_rectangle,ps_distr_linear)
-
+print(view_yview," ",y);
 y -= 2
-//if(abs(y-view_yview) &gt; off_screen_acc) y = view_yview+100;  
+if(abs(y-view_yview) &gt; off_screen_acc) y = view_yview+room_height;  
 </string>
           </argument>
         </arguments>
