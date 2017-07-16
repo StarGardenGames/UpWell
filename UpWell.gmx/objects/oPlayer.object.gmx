@@ -32,7 +32,7 @@ arm_sprite = sPlayerArmNormal;
 arm_frame = 0;
 arm_speed = 0;
 
-scale = .8
+scale = .75
 
 hpmax = 3;
 hp = hpmax;
@@ -79,7 +79,7 @@ dead = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>room_restart();
 </string>
           </argument>
         </arguments>

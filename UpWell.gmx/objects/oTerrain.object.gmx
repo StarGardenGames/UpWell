@@ -112,6 +112,9 @@ if(hp &lt; 0 || y-32 &gt; view_yview + room_height || oDeathFog.y &lt; y){
 
 if(object_index != oTerrain)
     image_index = 5 * (1-(hp / 100))//6,7,8 are played
+    
+v = (hp/100)*128 + 127
+image_blend = make_color_rgb(v,v,v)
 </string>
           </argument>
         </arguments>
@@ -137,7 +140,7 @@ if(object_index != oTerrain)
             <string>if(object_index != oTerrain)
     draw_self()
 else{
-    draw_sprite_ext(sprite_index,frame,x,y,1,1,image_angle,c_white,1)
+    draw_sprite_ext(sprite_index,frame,x,y,1,1,image_angle,image_blend,1)
     if(image_index != 0) draw_sprite(sBreakOverlay,image_index-1,x,y)
 }
 </string>

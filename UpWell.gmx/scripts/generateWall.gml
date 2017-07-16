@@ -2,9 +2,16 @@ var xx = argument0;
 var yy = gen_y; 
 var next_gen_y = argument1;
 
-var prog = min(100, abs(gen_y)/64)/100;
-var gap_chance = .05+prog*.45;
-var fill_chance = .3 - prog * .25;
+var prog = min(1,abs(oPlayer.score)/6000);
+
+var fill_length = 20 - 15*prog;
+var gap_length = 1.5 + 12*prog;
+
+
+var gap_chance = 1/fill_length;
+var fill_chance = 1/gap_length;
+
+
 
 if(gen_y == room_height){
     filled = true;

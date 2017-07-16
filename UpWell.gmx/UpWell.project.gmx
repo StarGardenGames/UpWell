@@ -5,7 +5,9 @@
   </Configs>
   <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndMusic</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\sPlayerRun</sprite>
@@ -39,6 +41,7 @@
     <sprite>sprites\sRedParticle</sprite>
     <sprite>sprites\sTitle</sprite>
     <sprite>sprites\sGreenParticle</sprite>
+    <sprite>sprites\sIntro</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -98,6 +101,7 @@
     <object>objects\oHealthGUI</object>
     <object>objects\oDeathFog</object>
     <object>objects\oTitle</object>
+    <object>objects\oIntro</object>
     <objects name="Terrain">
       <object>objects\oTerrain</object>
       <object>objects\oHeartblock</object>
@@ -108,6 +112,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_intro</room>
     <room>rooms\rm_title</room>
     <room>rooms\rm_rand</room>
     <room>rooms\room0</room>
