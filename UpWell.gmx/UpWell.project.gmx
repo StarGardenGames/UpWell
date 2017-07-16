@@ -37,6 +37,7 @@
     <sprite>sprites\sGrayParticle</sprite>
     <sprite>sprites\sRedParticle</sprite>
     <sprite>sprites\sTitle</sprite>
+    <sprite>sprites\sGreenParticle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
