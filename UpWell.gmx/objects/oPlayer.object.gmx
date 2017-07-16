@@ -32,13 +32,17 @@ arm_sprite = sPlayerThrowArm;
 arm_frame = 0;
 arm_speed = 0;
 
-hpmax = 3; 
+hpmax = 3;
 hp = hpmax;
 
 vsp = 0;
 hsp = 0;
 
 view_yview = y;// set low so it can be reset
+
+edge = noone;
+edge_locked = false;
+
 
 </string>
           </argument>
@@ -67,7 +71,9 @@ view_yview = y;// set low so it can be reset
 arm_angle = point_direction(x,y,
     mouse_x+view_xview,mouse_y+view_yview);
 
-if(mouse_check_button_pressed(mb_left)) playerShoots();
+if(mouse_check_button_pressed(mb_left) &amp;&amp; !edge_locked){
+    playerShoots();
+}
 
 playerUpdateAnimation();
 
@@ -105,6 +111,8 @@ drawSpriteExt(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle
 drawSpriteExt(arm_sprite,arm_frame,x-18*image_xscale,y-17,
 image_xscale,image_yscale,draw_angle,image_blend,image_alpha);
 
+var xscale = -1+(hsp&gt;0)*2
+var side_obj = collision_rectangle(x+26*xscale,y-44,x+32*xscale,y-49,oTerrain,false,true)
 </string>
           </argument>
         </arguments>

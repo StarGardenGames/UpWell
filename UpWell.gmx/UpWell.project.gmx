@@ -11,12 +11,14 @@
       <sprite>sprites\sPlayerJump</sprite>
       <sprite>sprites\sPlayerIdle</sprite>
       <sprite>sprites\sPlayerFalling</sprite>
+      <sprite>sprites\sPlayerClimbing</sprite>
       <sprite>sprites\sPlayerThrowArm</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\sRex</sprite>
       <sprite>sprites\sBat</sprite>
       <sprite>sprites\sRexBlack</sprite>
+      <sprite>sprites\sRexBig</sprite>
     </sprites>
     <sprite>sprites\sSolid</sprite>
     <sprite>sprites\sHeartblock</sprite>
@@ -35,6 +37,8 @@
         <script>scripts\playerMoveVertical.gml</script>
         <script>scripts\playerCheckCollisions.gml</script>
         <script>scripts\playerApplyMovement.gml</script>
+        <script>scripts\playerCheckEdgeGrab.gml</script>
+        <script>scripts\playerCheckClimb.gml</script>
       </scripts>
       <scripts name="Animation">
         <script>scripts\playerUpdateAnimation.gml</script>

@@ -2,8 +2,9 @@ var xx = argument0;
 var yy = gen_y; 
 var next_gen_y = argument1;
 
-var gap_chance = 50 + min(50, abs(gen_y)/64);
-var fill_chance = 50 + (100 - gap_chance);
+var prog = min(100, abs(gen_y)/64)/100;
+var gap_chance = .05+prog*.45;
+var fill_chance = .3 - prog * .25;
 
 if(gen_y == room_height){
     filled = true;
@@ -12,11 +13,11 @@ if(gen_y == room_height){
 }
 
 while(yy > next_gen_y){
-    //if(filled){
+    if(filled){
         instance_create(xx,yy,oTerrain);
-    /*    if(random(100) < gap_chance) filled = false;
+        if(random(1) < gap_chance) filled = false;
     }else{
-        if(random(100) < fill_chance) filled = true;
-    }*/
+        if(random(1) < fill_chance) filled = true;
+    }
     yy-=64;
 }
