@@ -85,6 +85,16 @@ while(true)
 }
 if(part_emitter_exists(sys,emit))
     part_emitter_burst(sys,emit,part_type,10);
+
+/*var dir = point_direction(x_temp,y_temp,oPlayer.x,oPlayer.y)
+var t_max_hsp = lengthdir_x(oPlayer.jump_power*3,dir)
+var t_max_vsp = lengthdir_y(oPlayer.jump_power*3,dir)
+var max_dist = 300
+var dist = min(max_dist,point_distance(x_temp,y_temp,oPlayer.x,oPlayer.y))
+with(oPlayer){
+    ex_hsp = t_max_hsp * (1 - (dist / max_dist))
+    vsp = t_max_vsp * (1 - (dist / max_dist))
+}*/
 </string>
           </argument>
         </arguments>
