@@ -6,6 +6,8 @@ T = terrain (x% H, y%D)
 D = damage terrain
 H = health terrain
 P = terrain (50%)
+X = tnt
+J = jump
 */
 i = 0;
 
@@ -22,4 +24,8 @@ patterns[ i, 0] = "TTP__";
 patterns[ i, 1] = "TTTP_";i++;
 
 patterns[ i, 0] = "PPTT___TT";i++;
+
+patterns[ i, 0] = "PTP";
+patterns[ i, 1] = "TTT";
+patterns[ i, 2] = "THT";i++;
 

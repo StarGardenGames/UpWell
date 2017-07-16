@@ -25,6 +25,10 @@ case 'D':
     return oDamageblock; break;
 case 'H':
     return oHeartblock; break;
+case 'X':
+    return oTNTblock; break;
+case 'J':
+    return oJumpblock; break;
 }
 
 
