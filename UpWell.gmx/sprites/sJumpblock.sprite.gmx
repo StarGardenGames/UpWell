@@ -23,6 +23,6 @@
     <frame index="0">images\sJumpblock_0.png</frame>
   </frames>
   <SWFfile>images\sJumpblock.swf</SWFfile>
-  <SWFnumframes>1</SWFnumframes>
+  <SWFnumframes>8</SWFnumframes>
   <SWFprecision>0.5</SWFprecision>
 </sprite>

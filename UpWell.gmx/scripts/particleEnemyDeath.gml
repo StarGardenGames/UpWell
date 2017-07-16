@@ -7,5 +7,4 @@ part_type_alpha2(part_type,1,.2);
 part_type_life(part_type,5,20);
 part_type_direction(part_type,0,360,0,0);
 part_type_size(part_type,0.5,1,0,0);
-
 emit = part_emitter_create(sys);

@@ -33,7 +33,7 @@ if(place_meeting(x,y,oTerrain)) instance_destroy();
 gen_y = 0
 hp = 100;
 
-on_jump_destroy_call = noone
+on_jump_destroy_call = noone 
 </string>
           </argument>
         </arguments>

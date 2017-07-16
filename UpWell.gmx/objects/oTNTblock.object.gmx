@@ -61,6 +61,8 @@ var y_temp = y;
 
 var rx = x - view_xview;
 var ry = y - view_yview;
+if(part_emitter_exists(sys,emit))
+    part_emitter_burst(sys,emit,part_type,10);
 part_emitter_region(sys,emit,rx,rx,ry,ry,ps_shape_rectangle,ps_distr_linear);
 x += 1000;
 y += 1000; 
