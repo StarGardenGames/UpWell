@@ -29,6 +29,7 @@
 dir = 0; 
 moving = false; 
 if(place_meeting(x,y,oTerrain)) instance_destroy();
+
 gen_y = 0
 hp = 100;
 

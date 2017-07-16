@@ -74,9 +74,9 @@ std_shoot = true;
 arm_angle = point_direction(x,y,
     mouse_x+view_xview,mouse_y+view_yview);
 
-if(mouse_check_button_pressed(mb_left) &amp;&amp; !edge_locked){
+/*if(mouse_check_button_pressed(mb_left) &amp;&amp; !edge_locked){
     playerShoots();
-}
+}*/
 playerMouseOperation();
 
 playerUpdateAnimation();

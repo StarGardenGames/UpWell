@@ -81,6 +81,7 @@
     </scripts>
     <scripts name="Terrain">
       <script>scripts\terrainHeartOnJumpCall.gml</script>
+      <script>scripts\terrainExplosion.gml</script>
     </scripts>
     <script>scripts\print.gml</script>
     <script>scripts\ParticleExplosion.gml</script>
