@@ -4,6 +4,7 @@ if(ter != noone){
         instance_destroy()
     }else{
         enemyAvoidTerrain();
+        ter.hp--;
     }
 }
 

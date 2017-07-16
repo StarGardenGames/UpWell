@@ -30,7 +30,9 @@ dir = 0;
 moving = false; 
 if(place_meeting(x,y,oTerrain)) instance_destroy();
 gen_y = 0
+hp = 100;
 
+on_jump_destroy_call = noone
 </string>
           </argument>
         </arguments>
@@ -64,6 +66,10 @@ if(moving)
     x+=sp*cos(dir); 
     y-=sp*sin(dir);
 }
+
+if(hp &lt; 0 || y-32 &gt; view_yview + room_height){
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -87,6 +93,7 @@ if(moving)
           <argument>
             <kind>1</kind>
             <string>drawSelf();
+drawRectangle(x-32,y-32,x-32+.64*hp,y-32+10,false);
 </string>
           </argument>
         </arguments>

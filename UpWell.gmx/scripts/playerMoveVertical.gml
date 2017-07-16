@@ -5,6 +5,8 @@ var on_ground = block_below != noone;
 
 if(pressing_up && on_ground){
     with(block_below){
+        if(on_jump_destroy_call != noone)
+            script_execute(on_jump_destroy_call);
         instance_destroy();
     }
     on_ground = false;

@@ -64,6 +64,10 @@
       <script>scripts\drawSpriteExt.gml</script>
       <script>scripts\drawSelf.gml</script>
       <script>scripts\drawSprite.gml</script>
+      <script>scripts\drawRectangle.gml</script>
+    </scripts>
+    <scripts name="Terrain">
+      <script>scripts\terrainHeartOnJumpCall.gml</script>
     </scripts>
     <script>scripts\print.gml</script>
   </scripts>
