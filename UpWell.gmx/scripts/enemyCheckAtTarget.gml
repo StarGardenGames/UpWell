@@ -1,4 +1,4 @@
 if(place_meeting(x,y,oPlayer)){
     instance_destroy();
-    oPlayer.hp--;
+    playerDamage();
 }

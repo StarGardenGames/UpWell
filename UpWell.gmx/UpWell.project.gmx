@@ -18,9 +18,13 @@
       <sprite>sprites\sBat</sprite>
       <sprite>sprites\sRexBlack</sprite>
     </sprites>
-    <sprite>sprites\sSolid</sprite>
-    <sprite>sprites\sHeartblock</sprite>
-    <sprite>sprites\sDamageblock</sprite>
+    <sprites name="Terrain">
+      <sprite>sprites\sDamageblock</sprite>
+      <sprite>sprites\sHeartblock</sprite>
+      <sprite>sprites\sSolid</sprite>
+      <sprite>sprites\sJumpblock</sprite>
+      <sprite>sprites\sTNTblock</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -43,6 +47,8 @@
       <script>scripts\playerCheckDeath.gml</script>
       <script>scripts\playerShoots.gml</script>
       <script>scripts\playerUpdateView.gml</script>
+      <script>scripts\playerMouseOperation.gml</script>
+      <script>scripts\playerDamage.gml</script>
     </scripts>
     <scripts name="Enemy">
       <script>scripts\enemySpawnOutsideOfTerrain.gml</script>
@@ -70,6 +76,7 @@
       <script>scripts\terrainHeartOnJumpCall.gml</script>
     </scripts>
     <script>scripts\print.gml</script>
+    <script>scripts\ParticleExplosion.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -82,14 +89,16 @@
       <object>objects\oTerrain</object>
       <object>objects\oHeartblock</object>
       <object>objects\oDamageblock</object>
+      <object>objects\oJumpblock</object>
+      <object>objects\oTNTblock</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room0</room>
     <room>rooms\rm_rand</room>
     <room>rooms\room4</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
-    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
